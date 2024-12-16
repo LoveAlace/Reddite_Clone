@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit - Dive into anything</title>
+    <link rel="icon" href="images/reddit_icon.png" type="image/x-icon" sizes="32x32"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+</head>
+<body>
+    <header>
+        <img src="images/header_icon.png" width="135px"/>
+        <input placeholder="Search Reddit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <button><i class="fa-regular fa-comment"></i></button>
+        <button><i class="fa-solid fa-plus"></i>Create</button>
+        <button><i class="fa-regular fa-bell"></i></button>
+        <button><i class="fa-regular fa-user"></i></button>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-fire"></i>Popular</a></li>
+                <li><a href="#"><i class="fa-solid fa-users"></i>Explore</a></li>
+                <li><a href="#"><i class="fa-solid fa-signal"></i>All</a></li>
+            </ul>
+            <hr />
+            <ul>
+                <h2>CUSTOM FEEDS</h2>
+                <li><a href="#"><i class="fa-solid fa-plus"></i>Create a custom feed</a></li>
+            </ul>
+            <ul>
+                <h2>COMMUNITITES</h2>
+                <li><a href="#"><i class="fa-solid fa-plus"></i>Create a community</a></li>
+            </ul>
+            <hr />
+            <ul>
+                <h2>RESOURCES</h2>
+                <li><a href="./About.html"><i class="fa-brands fa-reddit"></i>About Reddit</a></li>
+                <li><a href="#"><i class="fa-brands fa-adversal"></i>Advertise</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-question"></i>Help</a></li>
+                <li><a href="#"><i class="fa-solid fa-book-open"></i>Blog</a></li>
+                <li><a href="#"><i class="fa-solid fa-wrench"></i>Careers</a></li>
+                <li><a href="#"><i class="fa-solid fa-microphone"></i>Press</a></li>
+            </ul>
+            <hr />
+            <ul>
+                <li><a href="#"><i class="fa-regular fa-registered"></i>Communities</a></li>
+                <li><a href="#"><i class="fa-solid fa-hourglass"></i>Best of Reddit</a></li>
+                <li><a href="#"><i class="fa-solid fa-vector-square"></i>Topics</a></li>
+            </ul>
+            <hr />
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-scroll"></i>Content Policy</a></li>
+                <li><a href="#"><i class="fa-solid fa-scale-balanced"></i>Privacy Policy</a></li>
+                <li><a href="#"><i class="fa-solid fa-scroll"></i>User Agreement</a></li>
+            </ul>
+        </div>
+        <div class="post-container">
+            <div class="post" id="post-1">
+                <small>r/Dexter . 6 days ago . Because you've shown interest in this community</small>
+                <button>Join</button>
+                <button>...</button>
+                <a href="./post_1.html"><p>What would happen if these two met each other?</p></a>
+                <img src="images/post_1.jpg" width="600px" height="auto"/>
+                <button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button>
+                <button><i class="fa-regular fa-comment"></i> 258</button>
+                <button><i class="fa-solid fa-share"></i> Share</button>
+            </div>
+            <div class="post" id="post-2">
+                <small>r/HouseMD . 2 days ago . Because you've shown interest in a similar community</small>
+                <button>Join</button>
+                <button>...</button>
+                <a href="./post_2.html"><p>This is my favorite scene in this series.</p></a>
+                <div class="video-container">
+                    <video controls height="600px">
+                        <source src="videos/post_2.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                <button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button>
+                <button><i class="fa-regular fa-comment"></i> 58</button>
+                <button><i class="fa-solid fa-share"></i> Share</button>
+            </div>
+            <div class="post" id="post-3">
+                <small>r/bigbangtheory . 2 days ago . Because you've shown interest in this community</small>
+                <button>Join</button>
+                <button>...</button>
+                <a href="./post_3.html"><p>Who will win in a fight?</p></a>
+                <img src="images/post_3.jpg" width="600px" height="auto"/>
+                <button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button>
+                <button><i class="fa-regular fa-comment"></i> 25</button>
+                <button><i class="fa-solid fa-share"></i> Share</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
