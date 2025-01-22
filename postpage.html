@@ -2,106 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="256x256"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="styles/postpage.css">
+    <link rel="stylesheet" href="styles/header.css">
     <title>post</title>
+    
   </head>
   <body>
-    <header>
-      <img src="images/header_icon.png" width="135px" />
-      <input placeholder="Search Reddit" />
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <button><i class="fa-regular fa-comment"></i></button>
-      <button><i class="fa-solid fa-plus"></i>Create</button>
-      <button><i class="fa-regular fa-bell"></i></button>
-      <button><i class="fa-regular fa-user"></i></button>
-    </header>
-    <div class="postmain">
-      
-        <div class="sidebar">
-          <ul>
-            <li>
-              <a href="#"><i class="fa-solid fa-house"></i>Home</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-fire"></i>Popular</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-users"></i>Explore</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-signal"></i>All</a>
-            </li>
-          </ul>
-          <hr />
-          <ul>
-            <h2>CUSTOM FEEDS</h2>
-            <li>
-              <a href="#"><i class="fa-solid fa-plus"></i>Create a custom feed</a>
-            </li>
-          </ul>
-          <ul>
-            <h2>COMMUNITITES</h2>
-            <li>
-              <a href="#"><i class="fa-solid fa-plus"></i>Create a community</a>
-            </li>
-          </ul>
-          <hr />
-          <ul>
-            <h2>RESOURCES</h2>
-            <li>
-              <a href="./About.html"
-                ><i class="fa-brands fa-reddit"></i>About Reddit</a
-              >
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-adversal"></i>Advertise</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-regular fa-circle-question"></i>Help</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-book-open"></i>Blog</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-wrench"></i>Careers</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-microphone"></i>Press</a>
-            </li>
-          </ul>
-          <hr />
-          <ul>
-            <li>
-              <a href="#"><i class="fa-regular fa-registered"></i>Communities</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-hourglass"></i>Best of Reddit</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-vector-square"></i>Topics</a>
-            </li>
-          </ul>
-          <hr />
-          <ul>
-            <li>
-              <a href="#"><i class="fa-solid fa-scroll"></i>Content Policy</a>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa-solid fa-scale-balanced"></i>Privacy Policy</a
-              >
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-scroll"></i>User Agreement</a>
-            </li>
-          </ul>
+        <header>
+        <div class="header-logo">
+            <div class="device-small">
+                <i class="fa-solid fa-bars" id="toggleButton"></i>
+                <img src="images/favicon.ico" width="35px" height="auto">
+            </div>
+            <img src="images/header_icon.png" width="135px"/>
         </div>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Search Reddit">
+        </div>
+        <div class="buttons">
+            <button><i class="fa-regular fa-comment"></i></button>
+            <button class="create"><a href="postpage.html"><i class="fa-solid fa-plus"></i>Create</a></button>
+            <button><i class="fa-regular fa-bell"></i></button>
+            <button class="user-profile"><a href="profile.html"><img src="./images/user_profile.png"/></a></button>
+        </div>
+    </header>
+    
+       
         <section class="one">
-          <div class="heade">
+          <div class="header">
             <h2>
               <div class="icon">
                 <i class="fa fa-user-md" aria-hidden="true"></i>
@@ -110,51 +49,63 @@
               <br />
             </h2>
           </div>
-      <button>Drafts</button>
-      <h2>create post</h2>
-      <input type="text" placeholder="Select a community" />
+          <div class="postpage">
+      <button class="draft">Drafts</button>
+      <h2>Create Post</h2>
+      <div class="selectcom">
+        <i class="fa fa-search" aria-hidden="true" class = "selectinput"></i>
+      <input type="text" class = "selectinput" placeholder="Select a community" />
+      <i class="fa fa-sort-desc" aria-hidden="true" class = "selectinput"></i>
+    </div>
       <div class="postoptions">
-        <div class="options">Text</div>
+        <div class="options selectedoption">Text</div>
         <div class="options">Images & Video</div>
         <div class="options">Link</div>
-        <div class="options">poll</div>
+        <div class="options dull">poll</div>
       </div>
-      <button>Add tags</button>
-      <input type="text" placeholder="Title*" maxlength="300" />
-
+      
+      <input type="text"  class="title" placeholder="Title*" maxlength="300" /> <br>
+      <p class = "limit">0/300</p>
+      <button class="addtags">Add tags</button>
+<div class="writingArea">
       <div class="editingtools">
-       <button> <div class="tools"><b>B</b></div></button>
-       <button><div class="tools"><i>i</i></div></button>
-       <button> <div class="tools"><s>s</s></div></button>
-       <button><div class="tools">A<sub>^</sub></div></button>
-       <button><div class="tools"><small>T</small>T</div></button>
-       <button><div class="tools"><i class="fa fa-link" aria-hidden="true"></i></div></button>
-       <button><div class="tools"><i class="fa fa-list" aria-hidden="true"></i></div></button>
-       <button><div class="tools">
+       <button class="tools"> <b>B</b></button>
+       <button class="tools"><i>i</i></button>
+       <button class="tools"> <s>s</s></button>
+       <button class="tools">A<sub>^</sub></button>
+       <button class="tools"><small>T</small>T</button>
+       <button class="tools"><i class="fa fa-link" aria-hidden="true"></i></button>
+       <button class="tools"><i class="fa fa-list" aria-hidden="true"></i></button>
+       <button class="tools">
          <i class="fa fa-list-ol" aria-hidden="true"></i>
-        </div></button>
-        <button> <div class="tools">
+        </button>
+        <button class="tools"> 
           <i class="fa fa-quote-right" aria-hidden="true"></i>
-        </div></button>
-        <button> <div class="tools"><i class="fa fa-code" aria-hidden="true"></i></div></button>
-        <button> <div class="tools">
+        </button>
+        <button class="tools"> <i class="fa fa-code" aria-hidden="true"></i></button>
+        <button class="tools"> 
           <i class="fa fa-square-o" aria-hidden="true"></i>
-        </div></button>
-        <button><div class="tools">
+        </button>
+        <button class="tools">
           <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-        </div></button>
-        <button> <div class="tools">Markdown Editor</div>
-      </div></button>
+        </button>
+        <button class="Markdown"> Markdown Editor
+      </button>
+      </div>
       <textarea
         id="editor"
-        rows="5"
-        cols="20"
-        placeholder="Start typing here..."
+        rows="7"
+        cols="85"
+        placeholder="    Body"
+        
       ></textarea>
+    </div>
       <div class="postbuttons">
-        <button>Save draft</button>
-        <button>Post</button>
+        <button class="footerButton">Save draft</button>
+        <button class="footerButton">Post</button>
       </div>
     </div>
+  </div>
+  <script src="scripts/postpage.js"></script>
   </body>
 </html>

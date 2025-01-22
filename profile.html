@@ -2,163 +2,108 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="256x256"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/profile.css" />
     <title>profile</title>
   </head>
 
   <body>
     <header>
-      <img src="images/header_icon.png" width="135px" />
-      <input placeholder="Search Reddit" />
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <button><i class="fa-regular fa-comment"></i></button>
-      <button><i class="fa-solid fa-plus"></i>Create</button>
-      <button><i class="fa-regular fa-bell"></i></button>
-      <button><i class="fa-regular fa-user"></i></button>
-    </header>
-    <div class="container">
-      <div class="sidebar">
-        <ul>
-          <li>
-            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-fire"></i>Popular</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-users"></i>Explore</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-signal"></i>All</a>
-          </li>
-        </ul>
-        <hr />
-        <ul>
-          <h2>CUSTOM FEEDS</h2>
-          <li>
-            <a href="#"><i class="fa-solid fa-plus"></i>Create a custom feed</a>
-          </li>
-        </ul>
-        <ul>
-          <h2>COMMUNITITES</h2>
-          <li>
-            <a href="#"><i class="fa-solid fa-plus"></i>Create a community</a>
-          </li>
-        </ul>
-        <hr />
-        <ul>
-          <h2>RESOURCES</h2>
-          <li>
-            <a href="./About.html"
-              ><i class="fa-brands fa-reddit"></i>About Reddit</a
-            >
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-adversal"></i>Advertise</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-regular fa-circle-question"></i>Help</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-book-open"></i>Blog</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-wrench"></i>Careers</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-microphone"></i>Press</a>
-          </li>
-        </ul>
-        <hr />
-        <ul>
-          <li>
-            <a href="#"><i class="fa-regular fa-registered"></i>Communities</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-hourglass"></i>Best of Reddit</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-vector-square"></i>Topics</a>
-          </li>
-        </ul>
-        <hr />
-        <ul>
-          <li>
-            <a href="#"><i class="fa-solid fa-scroll"></i>Content Policy</a>
-          </li>
-          <li>
-            <a href="#"
-              ><i class="fa-solid fa-scale-balanced"></i>Privacy Policy</a
-            >
-          </li>
-          <li>
-            <a href="#"><i class="fa-solid fa-scroll"></i>User Agreement</a>
-          </li>
-        </ul>
+      <div class="header-logo">
+          <div class="device-small">
+              <i class="fa-solid fa-bars" id="toggleButton"></i>
+              <img src="images/favicon.ico" width="35px" height="auto">
+          </div>
+          <img src="images/header_icon.png" width="135px"/>
       </div>
-      <section class="one">
-        <div class="heade">
-          <h2>
+      <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input placeholder="Search Reddit">
+      </div>
+      <div class="buttons">
+        <button class="login"><a href="log in page.html"><i class="fa-solid fa-key"></i></a></button>
+          <button><i class="fa-regular fa-comment"></i></button>
+          <button class="create"><a href="postpage.html"><i class="fa-solid fa-plus"></i>Create</a></button>
+            <button><i class="fa-regular fa-bell"></i></button>
+            <button class="user-profile"><a href="profile.html"><img src="./images/user_profile.png"/></a></button>
+      </div>
+  </header>
+        
+      <div class="containerTwo">
+        <section class="one">
+          <div class="header">
             <div class="icon">
               <i class="fa fa-user-md" aria-hidden="true"></i>
             </div>
-            <div class="username">SignifiacntWolf1214</div>
+            <div class="username">
+              SignifiacntWolf1214
+              <p class="doublename">u/SignifiacntWolf1214</p>
+            </div>
             <br />
-          </h2>
-        </div>
-        <div class="menubar">
-          <div class="options">Overwiew</div>
-          <div class="options">Posts</div>
-          <div class="options">Comments</div>
-          <div class="options">Saved</div>
-          <div class="options">Hidden</div>
-          <div class="options">Upvoted</div>
-          <div class="options">Downvoted</div>
-        </div>
-        <select class="topics">
-          <option><strong>Sort by</strong></option>
-          <option>Hot</option>
-          <option>New</option>
-          <option>Top</option>
-        </select>
-        <br />
-        <h3>
-          <p>Looks like you haven't done anything yet</p>
-          <i class="fa fa-frown-o" aria-hidden="true"></i>
-        </h3>
-      </section>
-      <section class="two">
-        <div class="container">
-          <div class="username">SignifiacntWolf1214</div>
-          <div class="share">
-            <i class="fa fa-share-square-o" aria-hidden="true"></i>Share
           </div>
-          <h4>SETTINGS</h4>
-          <div class="setting">
-            <div class="customp">
-              <i class="fa fa-user-md" aria-hidden="true"></i>Profile <br />
-              customize your profile <button>Edit profile</button>
-            </div>
-            <div class="customA">
-              <i class="fa fa-user-secret" aria-hidden="true"></i>Avatar <br />
-              customize and style <button>Style Avatar</button>
-            </div>
-            <div class="customM">
-              <i class="fa fa-plus-square-o" aria-hidden="true"></i>Moderation
-              <br />
-              Moderation Tools <button>mod Settings</button>
-            </div>
+          <div class="menubar">
+            <div class="options selected">Overwiew</div>
+            <div class="options">Posts</div>
+            <div class="options">Comments</div>
+            <div class="options">Saved</div>
+            <div class="options">Hidden</div>
+            <div class="options">Upvoted</div>
+            <div class="options">Downvoted</div>
           </div>
-          <h4>LINKS</h4>
-          <button class="addlink">
-            <i class="fa fa-plus" aria-hidden="true"></i>Add Social Link
-          </button>
-        </div>
-      </section>
+          <select class="topics">
+            <option><strong>Sort by</strong></option>
+            <option>Hot</option>
+            <option>New</option>
+            <option>Top</option>
+          </select>
+          <br />
+          <h3>
+            <p>Looks like you haven't done anything yet</p>
+            <i class="fa fa-frown-o emoji" aria-hidden="true"></i>
+          </h3>
+        </section>
+        <section class="two">
+          <div class="container">
+            <div class="username">SignifiacntWolf1214</div>
+            <div class="share">
+              <i class="fa fa-share-square-o" aria-hidden="true"></i>Share
+            </div>
+           
+            <h4>SETTINGS</h4>
+            <div class="setting">
+              <div class="customp">
+                <i class="fa fa-user-md" aria-hidden="true"></i>Profile <br />
+                customize your profile <button>Edit profile</button>
+              </div>
+              <div class="customA">
+                <i class="fa fa-user-secret" aria-hidden="true"></i>Avatar
+                <br />
+                customize and style <button>Style Avatar</button>
+              </div>
+              <div class="customM">
+                <i class="fa fa-plus-square-o" aria-hidden="true"></i>Moderation
+                <br />
+                Moderation Tools <button>mod Settings</button>
+              </div>
+            </div>
+            <h4>LINKS</h4>
+            <button class="addlink">
+              <i class="fa fa-plus" aria-hidden="true"></i>Add Social Link
+            </button>
+          </div>
+        </section>
+      </div>
     </div>
+    <script src="scripts/profile.js"></script>
   </body>
 </html>
