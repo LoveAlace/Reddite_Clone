@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #0d1112;
+    --primary-text-color: #eef1f3;
+    --secondary-text-color: #dae3e8ff;
+    --primary-button-color: #115bca;
+    --outline-color: #3e4142ff;
+    --reddit-orange: #d93900;
+    --hover-color: #2a3236;
+}
+
+i {
+    background-color: transparent;
+}
+
+.post-container {
+    width: 700px;
+    padding-left: 70px;
+    display: flex;
+}
+
+.post-container .back-button {
+    margin-top: 10px;
+}
+
+.post-container > .back-button > a  > i {
+    font-size: 20px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-color: #2a32366a;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.post {
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.post-info {
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.post-info .profile {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.join-more {
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+}
+
+.join-more button.join{
+    width: 60px;
+    height: 25px;
+    background-color: var(--primary-button-color);
+    color: var(--primary-text-color);
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+}
+
+.join-more button.more {
+    font-weight: 900;
+    font-size: 20px;
+    align-self: center;
+    border: none;
+    background-color: transparent;
+}
+
+.post > .post-info > .profile > small {
+    background-color: transparent;
+}
+
+.post > a > p {
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-block: 10px 20px;
+    background-color: transparent;
+}
+
+.images-videos {
+    width: 660px;
+    height: 500px;
+    border: 0.5px solid var(--hover-color);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.images-videos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.video-container {
+    width: 660px;
+    height: 500px;
+    border: 0.5px solid var(--hover-color);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.post > .rate-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-block: 10px;
+    background-color: transparent;
+}
+
+.post > .rate-section button {
+    border: none;
+    background-color: var(--hover-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 30px;
+    border-radius: 30px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+
+.post > .rate-section .upvote-downvote {
+    display: flex;
+    align-items: center;
+    background-color: var(--hover-color);
+    border-radius: 30px;
+}
+
+.post > .rate-section .upvote-downvote p {
+    background-color: transparent;
+    font-weight: 700;
+}

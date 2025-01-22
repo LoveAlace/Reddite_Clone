@@ -1,0 +1,174 @@
+:root {
+    --primary-color: #0d1112;
+    --primary-text-color: #eef1f3;
+    --secondary-text-color: #dae3e8ff;
+    --primary-button-color: #115bca;
+    --reddit-orange: #d93900;
+    --active-color: #2a3236;
+    --hover-color: #ffffff0b;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--primary-color);
+    padding: 0 15px;
+    border-right: 2px solid var(--hover-color);
+    overflow-y: auto;
+    padding-bottom: 100px;
+    z-index: 1000;
+}
+
+li {
+    list-style-type: none;
+}
+
+.sidebar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-text-color);
+    font-size: 15px;
+    background-color: transparent;
+    padding: 7px 10px;
+    gap: 20px;
+}
+
+.sidebar-item .icon {
+    padding-left: 10px;
+    background-color: transparent;
+    justify-self: center;
+    flex: 10%;
+}
+
+i {
+    background-color: transparent;
+}
+
+.sidebar-item .title {
+    background-color: transparent;
+    flex: 80%;
+}
+
+hr {
+    border: none;
+    height: 0.5px;
+    background-color: var(--secondary-text-color);
+    opacity: 0.6;
+    margin-block: 20px;
+}
+
+.sidebar-drag {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10px;
+    padding: 10px;
+}
+
+.sidebar-drag:hover {
+    background-color: var(--hover-color);
+    color: var(--primary-text-color);
+}
+
+.sidebar-drag h2 {
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.6;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: var(--secondary-text-color);
+    padding: 8px;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ffffff0b;
+    color: var(--primary-text-color)
+}
+
+.sidebar ul li a#active {
+    background-color: var(--active-color);
+    border-radius: 7px;
+    color: var(--primary-text-color);
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 7px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--hover-color);
+    border-radius: 10px;
+}
+
+.sidebar:hover::-webkit-scrollbar {
+    opacity: 1;
+}
+
+.post-container {
+    margin-top: 80px;
+    margin-left: 300px;
+    padding: 20px;
+}
+
+.nested {
+    display: none;
+    padding-left: 20px;
+}
+
+.sidebar-drag {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-drag i {
+    transition: transform 0.3s;
+}
+
+.sidebar-drag.active i {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 800px) {
+    .sidebar.retracted {
+        transform: translateX(-100%);
+    }
+    
+    .post-container {
+        margin-left: -50px; 
+        overflow-x: hidden;
+        opacity: 0.5;
+    }
+
+    .sidebar.retracted ~ .post-container {
+        opacity: 1;
+    }
+
+    .back-button {
+        display: none;
+    }
+}

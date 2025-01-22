@@ -6,100 +6,247 @@
     <title>Reddit - Dive into anything</title>
     <link rel="icon" href="images/reddit_icon.png" type="image/x-icon" sizes="32x32"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/post.css">
+    <link rel="stylesheet" href="./styles/comment.css">
 </head>
 <body>
     <header>
-        <img src="images/header_icon.png" width="135px"/>
-        <input placeholder="Search Reddit">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <button><i class="fa-regular fa-comment"></i></button>
-        <button><i class="fa-solid fa-plus"></i>Create</button>
-        <button><i class="fa-regular fa-bell"></i></button>
-        <button><i class="fa-regular fa-user"></i></button>
-    </header>
-    <div class="container">
-        <div class="side-bar">
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-fire"></i>Popular</a></li>
-                <li><a href="#"><i class="fa-solid fa-users"></i>Explore</a></li>
-                <li><a href="#"><i class="fa-solid fa-signal"></i>All</a></li>
-            </ul>
-            <hr />
-            <ul>
-                <h2>CUSTOM FEEDS</h2>
-                <li><a href="#"><i class="fa-solid fa-plus"></i>Create a custom feed</a></li>
-            </ul>
-            <ul>
-                <h2>COMMUNITITES</h2>
-                <li><a href="#"><i class="fa-solid fa-plus"></i>Create a community</a></li>
-            </ul>
-            <hr />
-            <ul>
-                <h2>RESOURCES</h2>
-                <li><a href="./About.html"><i class="fa-brands fa-reddit"></i>About Reddit</a></li>
-                <li><a href="#"><i class="fa-brands fa-adversal"></i>Advertise</a></li>
-                <li><a href="#"><i class="fa-regular fa-circle-question"></i>Help</a></li>
-                <li><a href="#"><i class="fa-solid fa-book-open"></i>Blog</a></li>
-                <li><a href="#"><i class="fa-solid fa-wrench"></i>Careers</a></li>
-                <li><a href="#"><i class="fa-solid fa-microphone"></i>Press</a></li>
-            </ul>
-            <hr />
-            <ul>
-                <li><a href="#"><i class="fa-regular fa-registered"></i>Communities</a></li>
-                <li><a href="#"><i class="fa-solid fa-hourglass"></i>Best of Reddit</a></li>
-                <li><a href="#"><i class="fa-solid fa-vector-square"></i>Topics</a></li>
-            </ul>
-            <hr />
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-scroll"></i>Content Policy</a></li>
-                <li><a href="#"><i class="fa-solid fa-scale-balanced"></i>Privacy Policy</a></li>
-                <li><a href="#"><i class="fa-solid fa-scroll"></i>User Agreement</a></li>
-            </ul>
+        <div class="header-logo">
+            <div class="device-small">
+                <i class="fa-solid fa-bars" id="toggleButton"></i>
+                <img src="images/favicon.ico" width="35px" height="auto">
+            </div>
+            <img src="images/header_icon.png" width="135px"/>
         </div>
-        <div class="post" id="post-3">
-            <a href="./index.html#post-3"><i class="fa-solid fa-arrow-left"></i></a>
-            <small>r/bigbangtheory . 2 days ago . Because you've shown interest in this community</small>            <button>...</button>
-            <a href="./post_3"><p>Who will win in a fight?</p></a>
-            <img src="images/post_3.jpg" width="600px" height="auto"/>
-            <button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button>
-            <button><i class="fa-regular fa-comment"></i> 258</button>
-            <button><i class="fa-solid fa-share"></i> Share</button>
-            <div class="comment-section">
-            <input placeholder="Add a comment" />
-                <label for="sort">Sort by: </label>
-                <select name="sort" id="sort">
-                    <option selected><i class="fa-brands fa-space-awesome"></i>Best</option>
-                    <option><i class="fa-solid fa-arrow-up-from-bracket"></i>Top</option>
-                    <option><i class="fa-solid fa-gear"></i>New</option>
-                    <option><i class="fa-solid fa-utensils"></i>Controversial</option>
-                    <option><i class="fa-solid fa-box-archive"></i> Old</option>
-                    <option><i class="fa-solid fa-microphone"></i>Q&A</option>
-                </select>
-                <div class="comment" id="comment-1">
-                    <img src="images/comment_pfp.png" width="30px" alt="comment profile">
-                    <p>reddit_user . 1d ago</p>
-                    <p>This really caught me off guard. Everything was so ok before this. 😭</p>
-                    <button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button>
-                    <button><i class="fa-regular fa-comment"></i> 258</button>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Search Reddit">
+        </div>
+        <div class="buttons">
+            <button><i class="fa-regular fa-comment"></i></button>
+            <button class="create"><i class="fa-solid fa-plus"></i>Create</button>
+            <button><i class="fa-regular fa-bell"></i></button>
+            <button class="user-profile"><img src="./images/user_profile.png"/></button>
+        </div>
+    </header>
+<div class="container">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" id="active">
+                <div class="sidebar-item">
+                    <div class="icon"><i class="fa-solid fa-house"></i></div>
+                    <div class="title">Home</div>
                 </div>
-                <div class="comment" id="comment-2">
-                    <img src="images/comment_pfp.png" width="30px" alt="comment profile">
-                    <p>reddit_user . 1d ago</p>
-                    <p>This really caught me off guard. Everything was so ok before this. 😭</p>
-                    <button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button>
-                    <button><i class="fa-regular fa-comment"></i> 258</button>
+            </a></li>
+            <li><a href="#">
+                <div class="sidebar-item">
+                    <div class="icon"><i class="fa-solid fa-fire"></i></div>
+                    <div class="title">Popular</div>
                 </div>
-                <div class="comment" id="comment-3">
-                    <img src="images/comment_pfp.png" width="30px" alt="comment profile">
-                    <p>reddit_user . 1d ago</p>
-                    <p>This really caught me off guard. Everything was so ok before this. 😭</p>
-                    <button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button>
-                    <button><i class="fa-regular fa-comment"></i> 258</button>
+            </a></li>
+            <li><a href="#">
+                <div class="sidebar-item">
+                    <div class="icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="title">Explore</div>
+                </div>
+            </a></li>
+            <li><a href="#">
+                <div class="sidebar-item">
+                    <div class="icon"><i class="fa-solid fa-signal"></i></div>
+                    <div class="title">All</div>
+                </div>
+            </a></li>
+            <hr />
+            <li>
+                <div class="sidebar-drag" onclick="toggleSection(this)">
+                    <h2>CUSTOM FEEDS</h2>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="nested">
+                    <li><a href="#">
+                        <div class="sidebar-item">
+                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                            <div class="title">Create a custom feed</div>
+                        </div>
+                    </a></li>
+                </ul>
+                </li>
+                <li>
+                    <div class="sidebar-drag" onclick="toggleSection(this)">
+                        <h2>COMMUNITITES</h2><i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="nested">
+                    <li><a href="#">
+                        <div class="sidebar-item">
+                            <div class="icon"><i class="fa-solid fa-plus"></i></div>
+                            <div class="title">Create a community</div>
+                        </div>
+                    </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <hr />
+            <li>
+                <div class="sidebar-drag" onclick="toggleSection(this)">
+                    <h2>RESOURCES</h2><i class="fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="nested">
+                    <li><a href="./About.html">
+                        <div class="sidebar-item">
+                            <div class="icon"><i class="fa-brands fa-reddit"></i></div>
+                            <div class="title">About Reddit</div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="sidebar-item">
+                            <div class="icon"><i class="fa-brands fa-adversal"></i></div>
+                            <div class="title">Advertise</div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="sidebar-item">
+                            <div class="icon"><i class="fa-regular fa-circle-question"></i></div>
+                            <div class="title">Help</div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="sidebar-item">
+                            <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+                            <div class="title">Blog</div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="sidebar-item">
+                            <div class="icon"><i class="fa-solid fa-wrench"></i></div>
+                            <div class="title">Careers</div>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="sidebar-item">
+                            <div class="icon"><i class="fa-solid fa-microphone"></i></div>
+                            <div class="title">Press</div>
+                        </div>
+                    </a></li>
+                </ul>
+            </li>
+            <hr />
+            <li><a href="#">
+                <div class="sidebar-item">
+                    <div class="icon"><i class="fa-regular fa-registered"></i></div>
+                    <div class="title">Communities</div>
+                </div>
+            </a></li>
+            <li><a href="#">
+                <div class="sidebar-item">
+                    <div class="icon"><i class="fa-solid fa-hourglass"></i></div>
+                    <div class="title">Best of Reddit</div>
+                </div>
+            </a></li>
+            <li><a href="#">
+                <div class="sidebar-item">
+                    <div class="icon"><i class="fa-solid fa-vector-square"></i></div>
+                    <div class="title">Topics</div>
+                </div>
+            </a></li>
+            <hr />
+            <li><a href="#">
+                <div class="sidebar-item">
+                    <div class="icon"><i class="fa-solid fa-scroll"></i></div>
+                    <div class="title">Content Policy</div>
+                </div>
+            </a></li>
+            <li><a href="#">
+                <div class="sidebar-item">
+                    <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <div class="title">Privacy Policy</div>
+                </div>
+            </a></li>
+            <li><a href="#">
+                <div class="sidebar-item">
+                    <div class="icon"><i class="fa-solid fa-scroll"></i></div>
+                    <div class="title">User Agreement</div>
+                </div>
+            </a></li>
+        </ul>
+        </div>
+        <div class="post-container" id="post-1">
+            <div class="back-button">
+                <a href="./index.html#post-1"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="post">
+                <div class="post-info">
+                    <div class="profile">
+                        <img src="./images/user_profile.png" alt="user profile" width="20px">
+                        <small>r/bigbangtheory . 4 days ago . Because you've shown interest in this community</small>
+                    </div>
+                    <div class="join-more">
+                        <button class="join">Join</button>
+                        <button class="more">...</button>
+                    </div>
+                </div>
+                <a href="./post_1.html"><p>Who will win in a fight?</p></a>
+                <div class="images-videos">
+                    <img src="images/post_1.jpg"/>
+                </div>
+                <div class="rate-section">
+                    <a class="upvote-downvote"><button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button></a>
+                    <button class="comment"><i class="fa-regular fa-comment"></i> 258</button>
+                    <button class="share"><i class="fa-solid fa-share"></i> Share</button>
+                </div>
+                <div class="comment-section">
+                    <input placeholder="Add a comment" />
+                    <label for="sort">Sort by: </label>
+                    <select name="sort" id="sort">
+                        <option selected>Best</option>
+                        <option>Top</option>
+                        <option>New</option>
+                        <option>Controversial</option>
+                        <option>Old</option>
+                        <option>Q&A</option>
+                    </select>
+                    <div class="comment" id="comment-1">
+                        <div class="comment-info">
+                            <img src="images/comment_pfp.png" width="30px" alt="comment profile">
+                            <small><span class="user">reddit_user</span> . 1d ago</small>
+                        </div>
+                        <p>This really caught me off guard. Everything was so ok before this. 😭</p>
+                        <div class="rate-section">
+                            <a class="upvote-downvote"><button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button></a>
+                            <button><i class="fa-regular fa-comment"></i> 258</button>
+                        </div>
+                    </div>
+                    <div class="comment" id="comment-1">
+                        <div class="comment-info">
+                            <img src="images/comment_pfp.png" width="30px" alt="comment profile">
+                            <small><span class="user">reddit_user</span> . 1d ago</small>
+                        </div>
+                        <p>This really caught me off guard. Everything was so ok before this. 😭</p>
+                        <div class="rate-section">
+                            <a class="upvote-downvote"><button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button></a>
+                            <button><i class="fa-regular fa-comment"></i> 258</button>
+                        </div>
+                    </div>
+                    <div class="comment" id="comment-1">
+                        <div class="comment-info">
+                            <img src="images/comment_pfp.png" width="30px" alt="comment profile">
+                            <small><span class="user">reddit_user</span> . 1d ago</small>
+                        </div>
+                        <p>This really caught me off guard. Everything was so ok before this. 😭</p>
+                        <div class="rate-section">
+                            <a class="upvote-downvote"><button><i class="fa-solid fa-circle-up"></i></button> <p>1.8k</p> <button><i class="fa-regular fa-circle-down"></i></button></a>
+                            <button><i class="fa-regular fa-comment"></i> 258</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="./scripts/sidebar.js"></script>
 </body>
 </html>
