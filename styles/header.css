@@ -92,6 +92,9 @@ header {
     padding: 5px;
 }
 
+.buttons > button > a {
+    background-color: transparent;
+
 .buttons button:hover {
     background-color: var(--hover-color);
 }
