@@ -1,0 +1,173 @@
+body {
+  background-color: #0e1113;
+  color: white;
+}
+.postpage {
+  position: relative; /* Establish positioning context */
+  margin-left: 0;
+  margin-right: 600px;
+  margin-bottom: 100px;
+}
+
+.postSection {
+  margin-left: 250px;
+}
+.draft {
+  padding: 13px;
+  background-color: #0e1113;
+  color: #b7cad4;
+  border: none;
+  border-radius: 22px;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+.draft:hover {
+  background-color: #2a3236;
+}
+h2 {
+  color: #b7cad4;
+}
+.selectcom {
+  background-color: #2a3236;
+  color: white;
+  border-radius: 15px;
+  padding: 8px;
+  border: none;
+  width: 200px;
+}
+.selectinput {
+  background-color: #2a3236;
+  color: #b7cad4;
+  border: none;
+}
+.postoptions {
+  display: flex;
+  margin-left: 0;
+}
+.options {
+  padding: 10px;
+  margin: 10px;
+}
+.options:hover {
+  background-color: #2a3236;
+}
+.dull {
+  color: #51504e;
+}
+.selectedoption {
+  text-decoration: underline;
+  text-decoration-color: #648efc;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+  text-decoration-style: solid;
+}
+.title {
+  background-color: #0e1113;
+  width: 92%;
+  padding: 15px;
+  border-radius: 15px;
+  border: solid #383b3c 0.15px;
+  margin: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+.title:hover {
+  background-color: #22292c;
+}
+.limit {
+  position: absolute;
+  top: 150;
+  right: 0;
+  margin: 10px;
+  color: white;
+}
+.addtags {
+  background-color: #191c1e;
+  padding: 15px;
+  color: #b7cad4;
+  border-radius: 30px;
+  margin: 20px 0px;
+  border: none;
+}
+.writingArea {
+  background-color: #0e1113;
+  border: solid #383b3c 0.15px;
+  border-radius: 15px;
+  color: white;
+}
+
+.editingtools {
+  display: flex;
+  max-width: 100%;
+}
+.tools {
+  background-color: #0e1113;
+  color: #748791;
+  padding: 1px 8px;
+  margin: 5px;
+  border: none;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+
+.tools:hover {
+  background-color: #22292c;
+}
+.Markdown {
+  border-radius: 15px;
+  padding: 8px;
+  transition: all 150ms ease-in-out;
+  background-color: #0e1113;
+  margin: 5px 5px 5px 35px;
+  border: none;
+  width: 15%;
+  color: white;
+}
+.Markdown:hover {
+  background-color: #22292c;
+}
+textarea {
+  background-color: #0e1113;
+  border: none;
+  color: white;
+}
+
+.postbuttons {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.footerButton {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #191c1e;
+  border: none;
+  color: #51504e;
+}
+/*.editingtools{
+display: flex;
+align-items: center;
+background-color: #2c2c2c;
+padding: 10px;
+border-radius: 5px;
+border: solid #b7cad4 0.15px;
+}
+
+
+.tools {
+background-color: black;
+border: none;
+color:#b7cad4 ;
+padding: 5px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 3px;
+
+}*/
