@@ -1,0 +1,96 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "IBM Plex Sans";
+}
+
+.container {
+  background-color: #181c1f;
+  max-width: 450px;
+  height: 60%;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.closebutton {
+  background-color: #2a3236;
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  border: none;
+  position: relative;
+
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+  border-radius: 50px;
+}
+
+.maincontent {
+  margin: 0 auto;
+}
+
+.loginoptions {
+  background-color: white;
+  width: 80%;
+  padding: 8px;
+  border-radius: 30px;
+  margin: 5px;
+  border: none;
+}
+.theoptions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3px;
+}
+.optiontext {
+  margin: 0 auto;
+}
+.image {
+  height: 22px;
+  width: 20px;
+  transform: scale(1.3);
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0; /* Space around the divider */
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #3f3b3b; /* Line color */
+  margin: 0 10px; /* Space between the line and text */
+}
+
+.divider span {
+  font-size: 14px; /* Adjust font size */
+  color: #555; /* Text color */
+  padding: 0 5px; /* Space around the text */
+}
+.userinfo {
+  background-color: #2a3236;
+  padding: 23px;
+  margin-bottom: 20px;
+  width: 80%;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.log {
+  background-color: #23272a;
+  padding: 15px;
+  margin: 20px;
+  width: 80%;
+  border: none;
+  border-radius: 30px;
+  color: #585b5e;
+}
+a {
+  color: #4864ac;
+  text-decoration: none;
+}
