@@ -1,5 +1,5 @@
-Title: Reddit clone
-Group: 3
+Title: [Reddit clone]
+Group: [3]
 Group Members: 
 ------------------------------------------------------------------------------------------------------------
 Name                                                | Id
